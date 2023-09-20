@@ -22,8 +22,8 @@
  function printEvenWithFor(int $start = 1, int $end = 20, int $step=2) : void {
     $start = getStartValue($start);
     for($start; $start <= $end; $start += $step) {
-        $delimiter = $start >= $end ? '' : ',';
-        printf('%d%s ', $start, $delimiter);
+        $delimiter = $start >= $end ? '' : ', ';
+        printf('%d%s', $start, $delimiter);
     }
  }
 echo "Printing Even Number using for loop: \n";
@@ -36,8 +36,8 @@ echo "\n\n";
   function printEvenWithWhile(int $start = 1, int $end = 20, int $step=2) : void {
     $start = getStartValue($start);
     while($start <= $end) {
-        $delimiter = $start >= $end ? '' : ',';
-        printf('%d%s ', $start, $delimiter);
+        $delimiter = $start >= $end ? '' : ', ';
+        printf('%d%s', $start, $delimiter);
         $start+= $step;
     }
  }
@@ -53,8 +53,8 @@ echo "\n\n";
   function printEvenWithDoWhile(int $start = 1, int $end = 20, int $step=2) : void {
     $start = getStartValue($start);
     do {
-        $delimiter = $start >= $end ? '' : ',';
-        printf('%d%s ', $start, $delimiter);
+        $delimiter = $start >= $end ? '' : ', ';
+        printf('%d%s', $start, $delimiter);
         $start+= $step;
     } while($start <= $end);
  }
