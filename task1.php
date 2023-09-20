@@ -7,23 +7,15 @@
  * function to print.
  * Also do the same using while loop and do-while loop also.
  */
-
- /**
-  * It will fix the start value for the loops used in this script.
-  */
- function getStartValue($start) {
-    if($start < 1) $start = 1;
-    if($start % 2 != 0) $start++;
-    return $start;
- }
+ 
  /** 
   * Printing Even numbers using for loop.
   */
  function printEvenWithFor(int $start = 1, int $end = 20, int $step=2) : void {
-    $start = getStartValue($start);
+     $delimiter = '';
     for($start; $start <= $end; $start += $step) {
-        $delimiter = $start >= $end ? '' : ', ';
-        printf('%d%s', $start, $delimiter);
+        printf('%s%d', $delimiter, ($start % 2 == 0 ? $start : $start + 1));
+        $delimiter = ', ';    
     }
  }
 echo "Printing Even Number using for loop: \n";
@@ -34,10 +26,10 @@ echo "\n\n";
   * Print Even numbers using while loop.
   */
   function printEvenWithWhile(int $start = 1, int $end = 20, int $step=2) : void {
-    $start = getStartValue($start);
+      $delimiter = '';
     while($start <= $end) {
-        $delimiter = $start >= $end ? '' : ', ';
-        printf('%d%s', $start, $delimiter);
+        printf('%s%d', $delimiter, ($start % 2 == 0 ? $start : $start + 1));
+        $delimiter = ', ';
         $start+= $step;
     }
  }
@@ -51,10 +43,10 @@ echo "\n\n";
   * Print Even numbers using do-while loop.
   */
   function printEvenWithDoWhile(int $start = 1, int $end = 20, int $step=2) : void {
-    $start = getStartValue($start);
+      $delimiter = '';
     do {
-        $delimiter = $start >= $end ? '' : ', ';
-        printf('%d%s', $start, $delimiter);
+        printf('%s%d', $delimiter, ($start % 2 == 0 ? $start : $start + 1));
+        $delimiter = ', ';
         $start+= $step;
     } while($start <= $end);
  }
