@@ -7,7 +7,7 @@
  */
 
  $max = 50;
- for($i = 1; $i <=50; $i++) {
+ for($i = 1; $i <=$max; $i++) {
     if($i % 5 == 0) {
       continue;
     }
