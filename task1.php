@@ -19,7 +19,7 @@
     }
  }
 echo "Printing Even Number using for loop: \n";
- printEvenWithFor();
+ printEvenWithFor(1, 20, 2);
 echo "\n\n";
 
  /**
@@ -35,7 +35,7 @@ echo "\n\n";
  }
 
  echo "Printing Even Number using while loop: \n";
- printEvenWithWhile();
+ printEvenWithWhile(1, 20, 2);
  echo "\n\n";
 
 
@@ -52,5 +52,5 @@ echo "\n\n";
  }
 
  echo "Printing Even Number using do-while loop: \n";
- printEvenWithDoWhile();
+ printEvenWithDoWhile(1, 20, 2);
  echo "\n\n";
