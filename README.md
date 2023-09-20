@@ -7,3 +7,6 @@ This repository contains the module two assignment solutions.
 
 ### Task 2: Skip Multiples of 5 (task2.php)
 - It contains a loop to print numbers from 1-50 except the numbers which is multiple of 5.
+
+### Task 3: Break on Condition (task3.php)
+- It prints first 10 fibonacci numbers using loop and if the fibonacci number is greater than 100 then breaks the loop.
